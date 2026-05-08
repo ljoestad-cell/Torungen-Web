@@ -14,6 +14,7 @@ export default function Navbar() {
           <a href="/#hva-vi-leverer" className="transition hover:text-white">Hva vi lager</a>
           <a href="/#prosess" className="transition hover:text-white">Prosess</a>
           <a href="/priser" className="transition hover:text-white">Priser</a>
+          <a href="/om-oss" className="transition hover:text-white">Om oss</a>
         </nav>
 
         <div className="flex items-center gap-3">
@@ -42,6 +43,7 @@ export default function Navbar() {
             <a href="/#hva-vi-leverer" onClick={() => setOpen(false)} className="transition hover:text-white">Hva vi lager</a>
             <a href="/#prosess" onClick={() => setOpen(false)} className="transition hover:text-white">Prosess</a>
             <a href="/priser" onClick={() => setOpen(false)} className="transition hover:text-white">Priser</a>
+            <a href="/om-oss" onClick={() => setOpen(false)} className="transition hover:text-white">Om oss</a>
           </nav>
           <a
             href="mailto:ljoestad@gmail.com?subject=Nettside"

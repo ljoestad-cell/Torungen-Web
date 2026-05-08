@@ -1,10 +1,12 @@
 import Navbar from './components/Navbar'
 import WebOnlyPage from './pages/WebOnlyPage'
 import WebPriser from './pages/WebPriser'
+import OmOss from './pages/OmOss'
 
 function CurrentPage() {
   const path = window.location.pathname
   if (path === '/priser') return <WebPriser />
+  if (path === '/om-oss') return <OmOss />
   return <WebOnlyPage />
 }
 

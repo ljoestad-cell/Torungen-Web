@@ -28,7 +28,7 @@ function WebHero() {
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100">
             <span className="h-2 w-2 rounded-full bg-cyan-300" />
-            Profesjonelle nettsider for lokale bedrifter
+            Profesjonelle nettsider til fast pris
           </div>
 
           <h1 className="max-w-3xl text-4xl font-black tracking-tight leading-tight sm:text-5xl lg:text-7xl">
@@ -67,11 +67,10 @@ function WebHero() {
             <img
               src="/Webside%20advokat.png"
               alt="Profesjonell webdesign"
-              className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[540px]"
+              className="h-[320px] w-full object-cover brightness-110 contrast-105 sm:h-[420px] lg:h-[540px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-slate-950/30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/20 via-transparent to-slate-950/10" />
-            <div className="absolute inset-0 bg-cyan-950/15 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/45 via-transparent to-slate-950/10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/15 via-transparent to-transparent" />
           </div>
         </div>
       </div>
