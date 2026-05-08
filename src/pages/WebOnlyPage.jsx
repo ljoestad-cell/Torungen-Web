@@ -314,7 +314,7 @@ function WebPricing() {
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           <PriceCard
             title="Enkel nettside"
-            price="Fra 9 000 kr"
+            price="5 990 kr"
             highlight="Kom i gang raskt"
             items={[
               "Én til tre sider",
@@ -325,7 +325,7 @@ function WebPricing() {
           />
           <PriceCard
             title="Profesjonell nettside"
-            price="Fra 15 000 kr"
+            price="9 990 kr"
             highlight="Mest populær"
             items={[
               "Opptil fem sider",
@@ -337,7 +337,7 @@ function WebPricing() {
             featured
           />
           <PriceCard
-            title="Nettside + vedlikehold"
+            title="Nettside Drift"
             price="Fra 499 kr / mnd"
             highlight="Fast støtte"
             items={[

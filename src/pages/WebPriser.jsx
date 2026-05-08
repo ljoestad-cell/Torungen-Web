@@ -6,7 +6,7 @@ const company = {
 const packages = [
   {
     title: "Enkel nettside",
-    price: "Fra 9 000 kr",
+    price: "5 990 kr",
     highlight: "Kom i gang raskt",
     description: "For deg som trenger en ryddig og profesjonell tilstedeværelse på nett uten store investeringer.",
     items: [
@@ -21,7 +21,7 @@ const packages = [
   },
   {
     title: "Profesjonell nettside",
-    price: "Fra 15 000 kr",
+    price: "9 990 kr",
     highlight: "Mest populær",
     description: "Full nettside med skreddersydd design, tydelig budskap og innhold som bygger tillit og gir henvendelser.",
     items: [
@@ -39,10 +39,10 @@ const packages = [
     featured: true,
   },
   {
-    title: "Nettside + vedlikehold",
+    title: "Nettside Drift",
     price: "Fra 499 kr / mnd",
     highlight: "Fast IT-partner",
-    description: "Alt i Profesjonell-pakken, pluss månedlig oppfølging, endringer og støtte etter lansering.",
+    description: "Vi passer på nettsiden din og bistår med endringer og rapportering.",
     items: [
       "Alt i Profesjonell-pakken",
       "Månedlige innholdsoppdateringer",
