@@ -54,6 +54,19 @@ const packages = [
     ],
     featured: false,
   },
+  {
+    title: "Timepris",
+    price: "1 290 kr / time",
+    highlight: "Enkeltoppdrag",
+    description: "For deg som trenger hjelp med konkrete endringer, feilretting eller enkeltoppgaver på eksisterende nettside.",
+    items: [
+      "Ingen bindingstid",
+      "Faktureres per påbegynte time",
+      "Endringer og oppdateringer",
+      "Feilretting og support",
+    ],
+    featured: false,
+  },
 ]
 
 const alwaysIncluded = [
@@ -120,11 +133,11 @@ function PriserHero() {
             <span className="h-2 w-2 rounded-full bg-cyan-300" />
             Priser og pakker
           </div>
-          <h1 className="text-5xl font-black tracking-tight sm:text-6xl">
+          <h1 className="text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
             Enkle priser. Ingen skjulte kostnader.
           </h1>
-          <p className="mt-7 text-lg leading-8 text-slate-300 sm:text-xl">
-            Vi tilbyr faste pakkepriser slik at du vet nøyaktig hva du betaler. Ingen timepris, ingen overraskelser.
+          <p className="mt-5 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:text-xl">
+            Vi tilbyr faste pakkepriser slik at du vet nøyaktig hva du betaler. Velg pakken som passer, eller bruk timeprisen for enkeltoppdrag.
           </p>
         </div>
       </div>
@@ -136,7 +149,7 @@ function PakkerSection() {
   return (
     <section id="pakker" className="py-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {packages.map((pkg) => (
             <PackageCard key={pkg.title} {...pkg} />
           ))}
@@ -223,10 +236,10 @@ function ProsessSection() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold tracking-[0.35em] text-cyan-300">Slik foregår det</p>
-          <h2 className="mt-4 text-4xl font-black sm:text-5xl">Fra ja til publisert – steg for steg.</h2>
+          <h2 className="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">Fra ja til publisert – steg for steg.</h2>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-4">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 md:grid-cols-4">
           {[
             { number: "01", title: "Første prat", text: "Vi snakker om bedriften, målgruppen og hva nettsiden skal oppnå." },
             { number: "02", title: "Tilbud", text: "Du får et skriftlig tilbud med fast pris og leveringstid. Ingen overraskelser." },
@@ -254,7 +267,7 @@ function FaqSection() {
       <div className="mx-auto max-w-4xl px-5 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-semibold tracking-[0.35em] text-cyan-300">Vanlige spørsmål</p>
-          <h2 className="mt-4 text-4xl font-black sm:text-5xl">Spørsmål og svar.</h2>
+          <h2 className="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">Spørsmål og svar.</h2>
         </div>
 
         <div className="mt-14 space-y-4">

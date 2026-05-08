@@ -19,106 +19,59 @@ export default function WebOnlyPage() {
 
 function WebHero() {
   return (
-    <section id="top" className="relative isolate overflow-hidden py-24 lg:py-32">
-      <div className="absolute left-1/2 top-0 -z-10 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-cyan-400/20 blur-3xl" />
-      <div className="absolute right-0 top-24 -z-10 h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -z-10 h-80 w-80 rounded-full bg-brand-orange/20 blur-3xl" />
+    <section id="top" className="relative isolate overflow-hidden py-14 sm:py-20 lg:py-28">
+      <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-cyan-400/20 blur-3xl" />
+      <div className="absolute right-0 top-24 -z-10 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl" />
+      <div className="absolute bottom-0 left-0 -z-10 h-72 w-72 rounded-full bg-brand-orange/20 blur-3xl" />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-2 lg:grid-cols-[1.05fr_.95fr] lg:gap-14 lg:px-8">
         <div>
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-300/30 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-100">
             <span className="h-2 w-2 rounded-full bg-cyan-300" />
             Profesjonelle nettsider for lokale bedrifter
           </div>
 
-          <h1 className="max-w-3xl text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl leading-tight">
+          <h1 className="max-w-3xl text-4xl font-black tracking-tight leading-tight sm:text-5xl lg:text-7xl">
             Nettsider som gir deg flere kunder – ikke bare pynt.
           </h1>
 
-          <p className="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+          <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg lg:mt-7 lg:text-xl lg:leading-8">
             Vi lager moderne nettsider med tydelig budskap, mobiloptimalisert design og kontaktpunkter som faktisk konverterer. Enkelt, raskt og med fast pris.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
             <a
               href={`mailto:${company.email}?subject=Nettside`}
-              className="inline-flex rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-brand-orange px-8 py-4 text-center font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:brightness-105"
+              className="inline-flex justify-center rounded-full bg-gradient-to-r from-cyan-400 via-blue-500 to-brand-orange px-7 py-4 text-center font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:brightness-105"
             >
               Få din nye nettside
             </a>
             <a
               href={`tel:${company.phone}`}
-              className="inline-flex rounded-full border border-white/15 bg-white/10 px-8 py-4 text-center font-semibold text-white backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white/15"
+              className="inline-flex justify-center rounded-full border border-white/15 bg-white/10 px-7 py-4 text-center font-semibold text-white backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white/15"
             >
               Ring 905 91 820
             </a>
           </div>
 
-          <div className="mt-12 grid max-w-xl grid-cols-3 gap-4 text-center">
-            <HeroStat number="📱" label="Mobiloptimalisert" />
-            <HeroStat number="⚡" label="Rask levering" />
-            <HeroStat number="✓" label="Fast pris" />
+          <div className="mt-8 grid grid-cols-3 gap-3">
+            <HeroStat icon="📱" label="Mobiloptimalisert" />
+            <HeroStat icon="⚡" label="Rask levering" />
+            <HeroStat icon="✓" label="Fast pris" />
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative mt-4 md:mt-0">
           <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-300/25 to-brand-orange/20 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/90 p-4 shadow-glow backdrop-blur-sm">
-            <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-gray-100 text-slate-900 shadow-inner">
-              <div className="flex items-center gap-3 border-b border-gray-200 bg-gray-200 px-4 py-3">
-                <div className="flex gap-1.5 shrink-0">
-                  <span className="h-3 w-3 rounded-full bg-red-400" />
-                  <span className="h-3 w-3 rounded-full bg-yellow-400" />
-                  <span className="h-3 w-3 rounded-full bg-green-400" />
-                </div>
-                <div className="flex-1 rounded-full bg-white px-4 py-1 text-xs text-gray-400 text-center border border-gray-300">
-                  www.din-bedrift.no
-                </div>
-              </div>
-              <div className="bg-slate-900 text-white">
-                <div className="flex items-center justify-between px-5 py-3 border-b border-white/10">
-                  <div className="h-3 w-20 rounded-full bg-white/70" />
-                  <div className="flex gap-4">
-                    <div className="h-2 w-10 rounded-full bg-white/30" />
-                    <div className="h-2 w-10 rounded-full bg-white/30" />
-                    <div className="h-2 w-10 rounded-full bg-white/30" />
-                  </div>
-                  <div className="h-6 w-20 rounded-full bg-brand-orange/90" />
-                </div>
-                <div className="px-5 py-7 bg-gradient-to-br from-slate-800 to-slate-900">
-                  <div className="h-2 w-28 rounded-full bg-cyan-300/50 mb-3" />
-                  <div className="h-4 w-4/5 rounded-full bg-white/80 mb-2" />
-                  <div className="h-4 w-2/3 rounded-full bg-white/60 mb-5" />
-                  <div className="h-2.5 w-full rounded-full bg-white/20 mb-1.5" />
-                  <div className="h-2.5 w-5/6 rounded-full bg-white/20 mb-5" />
-                  <div className="h-8 w-32 rounded-full bg-brand-orange" />
-                </div>
-                <div className="px-5 py-5 bg-slate-950">
-                  <div className="h-2.5 w-36 rounded-full bg-white/40 mb-4" />
-                  <div className="grid grid-cols-3 gap-3">
-                    {[
-                      { accent: 'bg-cyan-300/25' },
-                      { accent: 'bg-brand-orange/25' },
-                      { accent: 'bg-blue-400/25' },
-                    ].map((card, i) => (
-                      <div key={i} className="rounded-2xl bg-slate-800/80 p-3">
-                        <div className={`h-6 w-6 rounded-xl ${card.accent} mb-2`} />
-                        <div className="h-2 w-14 rounded-full bg-white/50 mb-2" />
-                        <div className="h-2 w-full rounded-full bg-white/20 mb-1" />
-                        <div className="h-2 w-3/4 rounded-full bg-white/20" />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="mx-5 mb-5 rounded-2xl bg-gradient-to-r from-brand-orange to-[#fb923c] p-4 flex items-center justify-between">
-                  <div className="space-y-1.5">
-                    <div className="h-2.5 w-36 rounded-full bg-white/80" />
-                    <div className="h-2 w-28 rounded-full bg-white/50" />
-                  </div>
-                  <div className="h-8 w-24 rounded-full bg-slate-900/80 shrink-0" />
-                </div>
-              </div>
-            </div>
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-glow">
+            <img
+              src="/Webside%20advokat.png"
+              alt="Profesjonell webdesign"
+              className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[540px]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-slate-950/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/20 via-transparent to-slate-950/10" />
+            <div className="absolute inset-0 bg-cyan-950/15 mix-blend-multiply" />
           </div>
         </div>
       </div>
@@ -126,23 +79,23 @@ function WebHero() {
   )
 }
 
-function HeroStat({ number, label }) {
+function HeroStat({ icon, label }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-slate-900/80 px-5 py-6 backdrop-blur-sm">
-      <p className="text-xl font-black tracking-tight text-cyan-200">{number}</p>
-      <p className="mt-2 text-xs tracking-[0.3em] text-slate-400">{label}</p>
+    <div className="rounded-3xl border border-white/10 bg-slate-900/80 px-3 py-4 text-center backdrop-blur-sm sm:px-5 sm:py-6">
+      <p className="text-lg font-black text-cyan-200 sm:text-xl">{icon}</p>
+      <p className="mt-1 text-[10px] tracking-[0.2em] text-slate-400 sm:mt-2 sm:text-xs sm:tracking-[0.3em]">{label}</p>
     </div>
   )
 }
 
 function WebTrustStrip() {
   return (
-    <section className="border-y border-white/10 bg-white/5 py-6 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-7xl gap-4 px-5 text-center text-sm font-semibold tracking-[0.28em] text-slate-300 md:grid-cols-4 lg:px-8">
+    <section className="border-y border-white/10 bg-white/5 py-5 backdrop-blur-sm">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-3 px-5 text-center text-xs font-semibold tracking-[0.15em] text-slate-300 sm:text-sm sm:tracking-[0.28em] md:grid-cols-4 lg:px-8">
         <p>✓ Mobiloptimalisert design</p>
-        <p>✓ Tydelige CTA-er som konverterer</p>
-        <p>✓ Profesjonelt førsteinntrykk</p>
-        <p>✓ Fast pris – ingen overraskelser</p>
+        <p>✓ Tydelige CTA-er</p>
+        <p>✓ Profesjonelt uttrykk</p>
+        <p>✓ Fast pris</p>
       </div>
     </section>
   )
@@ -150,16 +103,18 @@ function WebTrustStrip() {
 
 function WebDesignFeature() {
   return (
-    <section className="bg-slate-950 py-24 text-white">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-2 lg:px-8">
+    <section className="bg-slate-950 py-14 text-white sm:py-20 lg:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:grid-cols-2 lg:gap-14 lg:px-8">
         <div>
           <p className="text-sm font-semibold tracking-[0.35em] text-cyan-300">Webdesign</p>
-          <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">En nettside skal ikke bare være pen. Den skal skaffe henvendelser.</h2>
-          <p className="mt-6 text-lg leading-8 text-slate-300">
+          <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
+            En nettside skal ikke bare være pen. Den skal skaffe henvendelser.
+          </h2>
+          <p className="mt-5 text-base leading-7 text-slate-300 lg:text-lg lg:leading-8">
             Vi bygger nettsider med tydelig budskap, god mobilopplevelse og konkrete kontaktpunkter. Perfekt for lokale bedrifter som vil se mer seriøse ut og få flere kunder.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
             <WebCheck text="Mobiloptimalisert" />
             <WebCheck text="Tydelig CTA" />
             <WebCheck text="Rask lastetid" />
@@ -168,7 +123,7 @@ function WebDesignFeature() {
 
           <a
             href={`mailto:${company.email}?subject=Nettside`}
-            className="mt-8 inline-flex rounded-full bg-gradient-to-r from-brand-orange via-[#fb923c] to-[#f97316] px-7 py-4 font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:brightness-110"
+            className="mt-7 inline-flex rounded-full bg-gradient-to-r from-brand-orange via-[#fb923c] to-[#f97316] px-7 py-4 font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:brightness-110"
           >
             Kom i gang med din nye nettside
           </a>
@@ -178,11 +133,11 @@ function WebDesignFeature() {
           {[
             {
               heading: "Flere henvendelser",
-              text: "Vi lager nettsider med klare budskap, tydelige knapper og en struktur som leder kunden mot kontakt. Målet er ikke bare trafikk, men relevante henvendelser.",
+              text: "Vi lager nettsider med klare budskap, tydelige knapper og en struktur som leder kunden mot kontakt.",
             },
             {
               heading: "Kunden blir værende",
-              text: "God flyt, lesbar tekst, rask lastetid og mobilvennlig design gjør det enklere for besøkende å forstå hvem du er og hvorfor de bør velge deg.",
+              text: "God flyt, lesbar tekst, rask lastetid og mobilvennlig design gjør det enklere for besøkende å forstå hvem du er.",
             },
             {
               heading: "Profesjonelt førsteinntrykk",
@@ -190,15 +145,15 @@ function WebDesignFeature() {
             },
             {
               heading: "Uttrykker det selskapet står for",
-              text: "Design, tekst og struktur tilpasses bedriftens identitet, tjenester og målgruppe, slik at nettsiden oppleves ekte og relevant.",
+              text: "Design, tekst og struktur tilpasses bedriftens identitet, tjenester og målgruppe.",
             },
           ].map((item) => (
             <article
               key={item.heading}
-              className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-7 shadow-glow backdrop-blur transition duration-300 hover:-translate-y-1"
+              className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-5 shadow-glow backdrop-blur transition duration-300 hover:-translate-y-1 sm:p-7"
             >
-              <h3 className="text-xl font-black text-white">{item.heading}</h3>
-              <p className="mt-3 leading-7 text-slate-300">{item.text}</p>
+              <h3 className="text-lg font-black text-white sm:text-xl">{item.heading}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">{item.text}</p>
             </article>
           ))}
         </div>
@@ -209,9 +164,9 @@ function WebDesignFeature() {
 
 function WebCheck({ text }) {
   return (
-    <div className="flex items-center gap-3 rounded-3xl bg-slate-900/80 p-4 shadow-sm ring-1 ring-white/10">
-      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-orange/15 font-black text-brand-orange">✓</span>
-      <span className="font-semibold text-white">{text}</span>
+    <div className="flex items-center gap-3 rounded-3xl bg-slate-900/80 p-3 shadow-sm ring-1 ring-white/10 sm:p-4">
+      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-orange/15 font-black text-brand-orange sm:h-9 sm:w-9">✓</span>
+      <span className="text-sm font-semibold text-white sm:text-base">{text}</span>
     </div>
   )
 }
@@ -227,27 +182,29 @@ function WebIncludes() {
   ]
 
   return (
-    <section id="hva-vi-leverer" className="relative py-28">
+    <section id="hva-vi-leverer" className="relative py-14 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold tracking-[0.35em] text-cyan-300">Hva er inkludert</p>
-          <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">Alt du trenger for en nettside som faktisk fungerer.</h2>
-          <p className="mt-6 text-lg leading-8 text-slate-300">
+          <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
+            Alt du trenger for en nettside som faktisk fungerer.
+          </h2>
+          <p className="mt-4 text-base leading-7 text-slate-300 lg:text-lg lg:leading-8">
             En god nettside er mer enn design. Den skal forklare hva bedriften gjør, bygge tillit og gjøre det enkelt for kunden å ta neste steg.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <div
               key={item.title}
-              className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-glow transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-slate-900"
+              className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-6 shadow-glow transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:bg-slate-900 lg:p-8"
             >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-3xl bg-cyan-300/15 text-3xl ring-1 ring-cyan-300/20">
+              <div className="mb-5 flex h-13 w-13 items-center justify-center rounded-3xl bg-cyan-300/15 text-2xl ring-1 ring-cyan-300/20 lg:h-16 lg:w-16 lg:text-3xl">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-black text-white">{item.title}</h3>
-              <p className="mt-3 leading-7 text-slate-300">{item.text}</p>
+              <h3 className="text-lg font-black text-white sm:text-xl">{item.title}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">{item.text}</p>
             </div>
           ))}
         </div>
@@ -258,14 +215,14 @@ function WebIncludes() {
 
 function WebProcess() {
   return (
-    <section id="prosess" className="py-28">
+    <section id="prosess" className="py-14 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold tracking-[0.35em] text-cyan-300">Slik jobber vi</p>
-          <h2 className="mt-4 text-4xl font-black sm:text-5xl">Fra første prat til publisert nettside.</h2>
+          <h2 className="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">Fra første prat til publisert nettside.</h2>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
           <ProcessStep
             number="01"
             title="Kartlegging"
@@ -289,67 +246,57 @@ function WebProcess() {
 
 function ProcessStep({ number, title, text }) {
   return (
-    <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8 shadow-glow transition duration-300 hover:-translate-y-1">
-      <p className="text-6xl font-black text-cyan-300/40">{number}</p>
-      <h3 className="mt-8 text-2xl font-black text-white">{title}</h3>
-      <p className="mt-4 leading-7 text-slate-300">{text}</p>
+    <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-6 shadow-glow transition duration-300 hover:-translate-y-1 lg:p-8">
+      <p className="text-5xl font-black text-cyan-300/40">{number}</p>
+      <h3 className="mt-6 text-xl font-black text-white">{title}</h3>
+      <p className="mt-3 text-sm leading-6 text-slate-300 sm:text-base sm:leading-7">{text}</p>
     </div>
   )
 }
 
 function WebPricing() {
   return (
-    <section id="pakker" className="bg-slate-950 py-24 text-white">
+    <section id="pakker" className="bg-slate-950 py-14 text-white sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">Pakker</p>
-            <h2 className="mt-4 text-4xl font-black sm:text-5xl">Velg pakken som passer din bedrift.</h2>
+            <h2 className="mt-4 text-3xl font-black sm:text-4xl lg:text-5xl">Velg pakken som passer din bedrift.</h2>
           </div>
           <a href="/priser" className="shrink-0 text-sm font-semibold text-cyan-300 transition hover:text-cyan-100">
             Se full prisoversikt →
           </a>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
           <PriceCard
             title="Enkel nettside"
             price="5 990 kr"
             highlight="Kom i gang raskt"
-            items={[
-              "Én til tre sider",
-              "Mobiloptimalisert",
-              "Kontaktskjema",
-              "Publiseringsklar",
-            ]}
+            items={["Én til tre sider", "Mobiloptimalisert", "Kontaktskjema", "Publiseringsklar"]}
           />
           <PriceCard
             title="Profesjonell nettside"
             price="9 990 kr"
             highlight="Mest populær"
-            items={[
-              "Opptil fem sider",
-              "Skreddersydd design",
-              "Tydelige CTA-er",
-              "SEO-klart innhold",
-              "Mobiloptimalisert",
-            ]}
+            items={["Opptil fem sider", "Skreddersydd design", "Tydelige CTA-er", "SEO-klart innhold", "Mobiloptimalisert"]}
             featured
           />
           <PriceCard
             title="Nettside Drift"
             price="Fra 499 kr / mnd"
             highlight="Fast støtte"
-            items={[
-              "Alt i Profesjonell",
-              "Månedlige oppdateringer",
-              "Innholdsendringer",
-              "Prioritert support",
-            ]}
+            items={["Alt i Profesjonell", "Månedlige oppdateringer", "Sikkerhetsoppdateringer", "Innholdsendringer", "Prioritert support"]}
+          />
+          <PriceCard
+            title="Timepris"
+            price="1 290 kr / time"
+            highlight="Enkeltoppdrag"
+            items={["Ingen bindingstid", "Endringer og oppdateringer", "Feilretting", "Faktureres per time"]}
           />
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-8 text-center">
           <a
             href="/priser"
             className="inline-flex rounded-full border border-white/15 bg-white/10 px-8 py-4 font-semibold text-white backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white/15"
@@ -365,33 +312,29 @@ function WebPricing() {
 function PriceCard({ title, price, highlight, items, featured }) {
   return (
     <div
-      className={`relative rounded-[2rem] p-8 shadow-glow ring-1 ${
+      className={`relative flex flex-col rounded-[2rem] p-6 shadow-glow ring-1 lg:p-8 ${
         featured
-          ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white ring-white/10'
-          : 'bg-slate-900/90 text-slate-100 ring-white/10'
+          ? 'bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 ring-white/10'
+          : 'bg-slate-900/90 ring-white/10'
       }`}
     >
       {featured && (
-        <span className="absolute right-6 top-6 rounded-full bg-brand-orange px-4 py-1.5 text-xs font-semibold text-white">
+        <span className="absolute right-5 top-5 rounded-full bg-brand-orange px-3 py-1 text-xs font-semibold text-white lg:right-6 lg:top-6 lg:px-4 lg:py-1.5">
           Populær
         </span>
       )}
-      <p className={`text-sm font-semibold uppercase tracking-[0.35em] ${featured ? 'text-orange-200' : 'text-cyan-300'}`}>
+      <p className={`text-xs font-semibold uppercase tracking-[0.3em] sm:text-sm ${featured ? 'text-orange-200' : 'text-cyan-300'}`}>
         {highlight}
       </p>
-      <h3 className="mt-4 text-3xl font-black">{title}</h3>
-      <p className={`mt-5 text-3xl font-black ${featured ? 'text-orange-200' : 'text-white'}`}>{price}</p>
-      <ul className={`mt-8 space-y-4 ${featured ? 'text-slate-300' : 'text-slate-400'}`}>
-        {items.map((item) => (
-          <li key={item}>✓ {item}</li>
-        ))}
+      <h3 className="mt-3 text-xl font-black text-white sm:text-2xl">{title}</h3>
+      <p className={`mt-3 text-2xl font-black lg:text-3xl ${featured ? 'text-orange-200' : 'text-white'}`}>{price}</p>
+      <ul className={`mt-5 flex-1 space-y-2.5 text-sm ${featured ? 'text-slate-300' : 'text-slate-400'}`}>
+        {items.map((item) => <li key={item}>✓ {item}</li>)}
       </ul>
       <a
-        href={`mailto:${company.email}?subject=Nettside`}
-        className={`mt-8 block rounded-full px-6 py-4 text-center font-semibold transition duration-300 hover:-translate-y-1 ${
-          featured
-            ? 'bg-brand-orange text-white hover:bg-[#fb923c]'
-            : 'bg-slate-800 text-white hover:bg-slate-700'
+        href={`mailto:${company.email}?subject=${encodeURIComponent(title)}`}
+        className={`mt-6 block rounded-full px-5 py-3 text-center text-sm font-semibold transition duration-300 hover:-translate-y-1 ${
+          featured ? 'bg-brand-orange text-white hover:bg-[#fb923c]' : 'bg-slate-800 text-white hover:bg-slate-700'
         }`}
       >
         Kontakt oss
@@ -404,18 +347,18 @@ function WebCTA() {
   return (
     <section
       id="kontakt"
-      className="relative overflow-hidden bg-gradient-to-r from-brand-orange via-[#fb923c] to-[#f97316] py-24 text-white"
+      className="relative overflow-hidden bg-gradient-to-r from-brand-orange via-[#fb923c] to-[#f97316] py-16 text-white sm:py-20 lg:py-24"
     >
       <div className="absolute left-10 top-10 h-64 w-64 rounded-full bg-white/20 blur-3xl" />
       <div className="absolute bottom-0 right-10 h-64 w-64 rounded-full bg-blue-500/20 blur-3xl" />
       <div className="relative mx-auto max-w-4xl px-5 text-center lg:px-8">
-        <h2 className="text-4xl font-black tracking-tight sm:text-6xl">
+        <h2 className="text-3xl font-black tracking-tight sm:text-4xl lg:text-6xl">
           Klar for en nettside som jobber for deg?
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg font-medium text-white/85 leading-8">
+        <p className="mx-auto mt-5 max-w-2xl text-base font-medium text-white/85 leading-7 sm:text-lg sm:leading-8">
           Ta kontakt for en uforpliktende prat om din nye nettside. Vi finner ut hva som passer best for din bedrift.
         </p>
-        <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">
+        <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row sm:gap-6">
           <a
             href={`mailto:${company.email}?subject=Nettside`}
             className="rounded-full bg-slate-950 px-8 py-4 font-semibold text-white shadow-glow transition duration-300 hover:-translate-y-1 hover:bg-slate-800"
